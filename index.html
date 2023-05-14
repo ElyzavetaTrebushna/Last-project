@@ -9,7 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap"
-      rel="stylesheet"
+      rel="stylesheet">
+    <link 
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     />
   </head>
 
@@ -32,12 +35,23 @@
         <hr />
         <div class="main_content">
           <div>
-            <h1 id="city">Kherson</h1>
-            <h2 class="today"></h2>
+            <h1 id="city"></h1>
+            <ul class="descr_today">
+              <li class="today"></li>
+              <li class="descr_day"></li>
+            </ul>
           </div>
           <div class="today_temperature">
-            🌞<span id="temperature">19</span> <a href="#" id="celsium">°C</a>
+            <div>
+            <span id="icon_today">🌞</span> <span id="temperature"></span> <a href="#" id="celsium">°C</a>
             <a href="#" id="farenheit">°F</a>
+            </div>
+            <div class="descr">
+              <ul>
+                <li>Humidity: <span class="humidity">77</span>% <br></li>
+                <li>Wind: <span class="wind">8</span>km/h <br></li>
+              </ul>
+            </div>
           </div>
         </div>
         <ul class="days">

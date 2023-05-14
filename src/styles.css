@@ -86,15 +86,33 @@ footer {
   margin: 30px;
   justify-content: space-between;
 }
-.today {
+.descr_today{
+  list-style-type: none;
+}
+.today{
   color: yellow;
   opacity: 0.7;
   font-size: 24px;
   font-weight: 400;
 }
+.descr_day {
+  color: black;
+  font-size: 16px;
+  
+}
+
 .today_temperature {
   color: blue;
   font-size: 66px;
+}
+.descr{
+  font-size: 16px;
+  opacity: 0.7;
+  padding-left: 94px;
+  margin-top: 10px;
+}
+.descr ul{
+  list-style-type: none;
 }
 .days {
   display: flex;

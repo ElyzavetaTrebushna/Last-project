@@ -43,6 +43,10 @@ function displayWeatherCondition(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+
+  document.querySelector(".humidity").innerHTML=response.data.main.humidity;
+  document.querySelector(".wind").innerHTML=Math.round(response.data.wind.speed);
+  document.querySelector(".descr_day").innerHTML=response.data.weather[0].main;
 }
 
 function searchLocation(position) {
@@ -89,7 +93,7 @@ let minutes = today.getMinutes();
 if (minutes < 10) {
   minutes = `0${minutes}`;
 }
-let h2 = document.querySelector("h2");
+let h2 = document.querySelector(".today");
 h2.innerHTML = `${week[todayIndex]} ${hours}:${minutes}`;
 
 function convertTempF(event) {
